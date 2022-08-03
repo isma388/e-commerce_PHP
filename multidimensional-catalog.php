@@ -18,20 +18,39 @@ $products = [
     ],
 ];
 
+
+
 ?>
 
-<hmtl>
+<!--<hmtl>-->
+<!--    <body>-->
+<!--    <div>-->
+<!--        <h3>--><?php //echo $product["iphone"]["name"]?><!--</h3>-->
+<!--        <p>--><?php //echo $product["iphone"]["price"]?><!--</p>-->
+<!--        <img src="--><?php //echo $product["iphone"]["picture_url"]?><!--">-->
+<!--    </div>-->
+<!--<br><br>-->
+<!--    <div>-->
+<!--        <h3>--><?php //echo $product["ipad"]["name"]?><!--</h3>-->
+<!--        <p>--><?php //echo $product["ipad"]["price"]?><!--</p>-->
+<!--        <img src="--><?php //echo $product["ipad"]["picture_url"]?><!--">-->
+<!--    </div>-->
+<!--    </body>-->
+<!--</hmtl>-->
+
+<html lang="fr">
     <body>
+
+    <?php foreach ($products as $product){?>
+
+
     <div>
-        <h3><?php echo $products["iphone"]["name"]?></h3>
-        <p><?php echo $products["iphone"]["price"]?></p>
-        <img src="<?php echo $products["iphone"]["picture_url"]?>">
+        <h3><?php echo $product["name"]?></h3>
+        <p><?php echo $product["price"]?></p>
+        <img src="<?php echo $product["picture_url"]?>" alt="">
     </div>
-<br><br>
-    <div>
-        <h3><?php echo $products["ipad"]["name"]?></h3>
-        <p><?php echo $products["ipad"]["price"]?></p>
-        <img src="<?php echo $products["ipad"]["picture_url"]?>">
-    </div>
+
+<?php } ?>
+
     </body>
-</hmtl>
+</html>
