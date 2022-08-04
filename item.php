@@ -1,6 +1,6 @@
 <?php
-$article ="chargeur";
-$prix ="5€";
+$name ="chargeur";
+$price ="5€";
 $image ="assets/chargeur.jpeg";
 
 ?>
@@ -9,8 +9,8 @@ $image ="assets/chargeur.jpeg";
 <header>
     <?php require("header.php")  ?>
 </header>
-<h1>artcile : <?php echo $article ?></h1>
-<p> prix : <?php echo $prix ?></p>
+<h1>artcile : <?= $name ?></h1>
+<p> prix : <?php echo $price ?></p>
 <img src="<?php echo $image?>" alt="">
 
 
