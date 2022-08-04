@@ -22,22 +22,6 @@ $products = [
 
 ?>
 
-<!--<hmtl>-->
-<!--    <body>-->
-<!--    <div>-->
-<!--        <h3>--><?php //echo $product["iphone"]["name"]?><!--</h3>-->
-<!--        <p>--><?php //echo $product["iphone"]["price"]?><!--</p>-->
-<!--        <img src="--><?php //echo $product["iphone"]["picture_url"]?><!--">-->
-<!--    </div>-->
-<!--<br><br>-->
-<!--    <div>-->
-<!--        <h3>--><?php //echo $product["ipad"]["name"]?><!--</h3>-->
-<!--        <p>--><?php //echo $product["ipad"]["price"]?><!--</p>-->
-<!--        <img src="--><?php //echo $product["ipad"]["picture_url"]?><!--">-->
-<!--    </div>-->
-<!--    </body>-->
-<!--</hmtl>-->
-
 <html lang="fr">
     <body>
 
@@ -48,7 +32,7 @@ $products = [
         <h3><?php echo $product["name"]?></h3>
         <p><?php echo formatPrice($product["price"])?></p>
         <p><?php echo formatPrice(priceExcludingVAT($product["price"])) . "HT"?></p>
-        <p><?php echo formatPrice(discountedPrice($product["price"],$product["discount"])) ?></p>
+        <p><?php echo formatPrice(discountedPrice($product["price"],$product["discount"]))?></p>
 
         <img src="<?php echo $product["picture_url"]?>" alt="">
     </div>
