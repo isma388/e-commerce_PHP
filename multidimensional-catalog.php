@@ -17,9 +17,6 @@ $products = [
         "picture_url" => "assets/ipad_two.png"
     ],
 ];
-
-
-
 ?>
 
 <html lang="fr">

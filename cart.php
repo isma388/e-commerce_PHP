@@ -1,17 +1,19 @@
 <?php
 
+require ("catalog.php");
+require ("my_function.php");
 
 ?>
 
-<html>
+<html lang="fr">
 <?php require ("header.php");?>
 <body>
 
-<div class="container">
+<div class="container text-bg-warning">
     <div class="row ">
 
         <div class="col-lg-3 col-md-6">
-        <h4>Produit</h4>
+        <h4>Produit  ?></h4>
             <h3>Nom du produit </h3>
         </div>
 
